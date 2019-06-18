@@ -9,8 +9,18 @@ public abstract class Duck {
 
     }
 
+    // Behavior Setter Methods
+    public void setFlyBehavior(FlyBehavior fb) {
+        flyBehavior = fb;
+    }
+
+    public void setQuackBehavior(QuackBehavior qb) {
+        quackBehavior = qb;
+    }
+
     public abstract void  display();
 
+    // Behaviors
     public void performFly() {
         flyBehavior.fly();
     }
